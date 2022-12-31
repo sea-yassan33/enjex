@@ -1,0 +1,28 @@
+.main{
+  width: 100%;
+  height: 100%;
+  background: #FFF7ED;
+}
+
+.title-contents {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url('index1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 10vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.section{
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

@@ -1,0 +1,80 @@
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class='title-contents'>
+    <div class="col-lg-6">
+      <div class="mb-5 mb-lg-0 text-center">
+        <h1 class="display-4 lh-1 mb-3 text-lg-start">
+          Exercise Sharing
+        </h1>
+        <h1 class="display-4 lh-1 mb-3 text-lg-start">
+          Healthy Routines
+        </h1>
+        <p class="lead text-start fw-normal text-info mb-5">
+          あなたの健康をデザイン
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row gx-5 align-items-center">
+    <div class="col-lg-6 order-lg-2">
+      <div class="p-5">
+        <%= image_tag 'picter1.jpg', class:"img-fluid rounded-circle" %>
+      </div>
+    </div>
+    <div class="col-lg-6 order-lg-1">
+      <div class="p-5">
+        <h2 class="display-4 text-nowrap">運動を共有しよう</h2>
+        <p>Do you usually exercise with the help of videos? Share those exercise videos with everyone. Let's all share our new discoveries and the joy of exercise!</p>
+      </div>
+    </div>
+  </div>
+  <div class="row gx-5 align-items-center">
+    <div class="col-lg-6 order-lg-1">
+      <div class="p-5">
+        <%= image_tag 'picter2.jpg', class:"img-fluid rounded-circle" %>
+      </div>
+    </div>
+    <div class="col-lg-6 order-lg-2">
+      <div class="p-5">
+        <h2 class="display-4 text-nowrap">目標を讃え合おう</h2>
+        <p>Let's set goals for the videos you share. Let's also share our goals and praise each other to keep us motivated to keep exercising!</p>
+      </div>
+    </div>
+  </div>
+  <div class="features-icons bg-ori1 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <%= image_tag "logo1.png", class: "bi-window m-auto text-primary", width: "120", height: "120"%>
+            </div>
+            <h3>運動を共有する</h3>
+            <p class="lead mb-0">Copy the exercise video URL (from you tube) you want to share and share the video.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <%= image_tag "logo2.png", class: "bi-window m-auto text-primary", width: "120", height: "120"%>
+            </div>
+            <h3>トレーナーのブログ</h3>
+            <p class="lead mb-0">CVisit the training blog of a sports trainer or therapist training. Stay fit with the daily activities of these experts!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <%= image_tag "logo1.png", class: "bi-window m-auto text-primary", width: "120", height: "120"%>
+            </div>
+            <h3>Trainer Only</h3>
+            <p class="lead mb-0">Register and set up approvals for sports trainers and therapists. This link is for professionals only.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
