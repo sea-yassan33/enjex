@@ -5,7 +5,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link me-lg-3" href="">ログイン</a>
+            <%= link_to 'ログイン', new_user_session_path, class: "nav-link me-lg-3" %>
           </li>
           <li class="nav-item">
             <%= link_to '新規登録', new_user_registration_path, class: "nav-link me-lg-3" %>
