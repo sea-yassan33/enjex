@@ -1,11 +1,12 @@
 class Target < ApplicationRecord
-  extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :exise
-
   with_options presence: true do
     validates :title
     validates :youtube
+    validates :exise_category_id, numericality: { other_than: 1 } 
   end
 
-  validates :exise_category_id, numericality: { other_than: 1 } 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :exise
+
+  belongs_to :user
 end
