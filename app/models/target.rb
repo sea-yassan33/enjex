@@ -10,4 +10,5 @@ class Target < ApplicationRecord
 
   belongs_to :user
   has_many :comments
+  has_many :like, dependent: :destroy
 end

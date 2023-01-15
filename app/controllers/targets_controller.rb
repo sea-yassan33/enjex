@@ -20,6 +20,10 @@ class TargetsController < ApplicationController
     end
   end
 
+  def likes
+    @targets_l = current_user.likes_targets
+  end
+
   private
   def move_to_index
     unless user_signed_in?

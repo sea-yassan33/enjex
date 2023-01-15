@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new
     @targets = Target.all.order('created_at DESC')
     @target = Target.find(params[:target_id])
+    @likes = Like.all
     @comments = @target.comments.includes(:user)
   end
 
