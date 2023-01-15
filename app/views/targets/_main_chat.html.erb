@@ -12,13 +12,12 @@
 </div>
 
 <div class="messages">
-  <div class="card" style="max-width: 560px;">
+  <div class="card" style="max-width: 600px;">
     <% @target.each do |target|%>
-      <div class="card" style="max-width: 560px;">
+      <div class="card" style="max-width: 600px;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= target.youtube.last(11) %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="card-body">
+        <div class="card-body flex">
           <h5 class="card-title"><%= target.title %></h5>
-          <p class="card-text">text</p>
           <a href="#" class="btn btn-primary">Fight!!</a>
         </div>
         <div class="message">
@@ -40,49 +39,7 @@
     <% end %>
   <div>
 </div>
-
-<div class="messages">
-  <div class="card" style="max-width: 560px;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TijQ3bXgJOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">text</p>
-      <a href="#" class="btn btn-primary">Fight!!</a>
-    </div>
-  </div>
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Tom
-      </div>
-      <div class="message-date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        おはよう
-      </div>
-    </div>
-  </div>
-
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Tom
-      </div>
-      <div class="message-date">
-        2020/3/31(Wed) 12:47:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        こんばんは
-      </div>
-    </div>
-  </div>
-</div>
-
+<br>
 <div class="form">
   <div class="form-input">
     <input class="form-message" placeholder= "type a message">

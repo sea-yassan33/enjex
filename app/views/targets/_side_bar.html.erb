@@ -1,21 +1,28 @@
 <div class="side-bar-header">
-  <div class="header-name">
-    <a href="#">user_name</a>
-  </div>
-  <div class="create-url">
-    <a href="#">Log_out</a>
-  </div>
+  <%= link_to image_tag("home.png" , width: "30", height: "30"),tops_path%>
+  <% if user_signed_in? %>
+    <div class="header-name">
+      <%= link_to current_user.nickname, "#" %></li>
+    </div>
+    <div class="create-url">
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete%>
+    </div>
+  <% else %>
+    <div class="header-name">
+      <a href="#">Gest</a>
+    </div>
+    <div class="create-url">
+      <%= link_to 'Log_in', new_user_session_path%>
+    </div>
+  <% end %>
 </div>
 
 <div class="contents">
-  <div class="content">
-    <div class="content-name">
-      <a href="#">ex-content1</a>
+  <% @target.each do |target_name|%>
+    <div class="content">
+      <div class="content-name">
+        <a href="#"><%= target_name.title%></a>
+      </div>
     </div>
-  </div>
-  <div class="content">
-    <div class="content-name">
-      <a href="#">ex-content2</a>
-    </div>
-  </div>
+  <% end%>
 </div>

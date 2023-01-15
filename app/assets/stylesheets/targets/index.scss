@@ -81,6 +81,11 @@
 .message {
   margin: 10px 0 0 0;
 }
+.flex{
+  max-width: 580px;
+  display: flex;
+  justify-content: space-between;
+}
 .upper-message{
   display: flex;
 }

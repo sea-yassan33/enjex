@@ -5,8 +5,12 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
           <% if user_signed_in? %>
-            <%= link_to current_user.nickname, "#", class: "nav-link me-lg-3" %></li>
-            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav-link me-lg-3" %>
+            <li class="nav-item">
+              <%= link_to current_user.nickname, "#", class: "nav-link me-lg-3" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav-link me-lg-3" %>
+            </li>
           <% else %>
             <li class="nav-item">
               <%= link_to 'ログイン', new_user_session_path, class: "nav-link me-lg-3" %>
