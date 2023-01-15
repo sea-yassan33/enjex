@@ -10,4 +10,7 @@ class User < ApplicationRecord
                         message: 'is invalid. Include both letters and numbers' }
     validates :nickname
   end
+
+  has_many :comments
+  has_many :targets
 end

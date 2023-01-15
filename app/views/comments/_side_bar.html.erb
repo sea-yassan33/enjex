@@ -1,0 +1,28 @@
+<div class="side-bar-header">
+  <%= link_to image_tag("home.png" , width: "30", height: "30"),tops_path%>
+  <% if user_signed_in? %>
+    <div class="header-name">
+      <%= link_to current_user.nickname, "#" %></li>
+    </div>
+    <div class="create-url">
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete%>
+    </div>
+  <% else %>
+    <div class="header-name">
+      <a href="#">Gest</a>
+    </div>
+    <div class="create-url">
+      <%= link_to 'Log_in', new_user_session_path%>
+    </div>
+  <% end %>
+</div>
+
+<div class="contents">
+  <% @targets.each do |target_name|%>
+    <div class="content">
+      <div class="content-name">
+        <%= link_to target_name.title, target_comments_path(target_name.id) %>
+      </div>
+    </div>
+  <% end%>
+</div>
