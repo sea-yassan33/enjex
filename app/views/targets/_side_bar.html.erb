@@ -18,10 +18,10 @@
 </div>
 
 <div class="contents">
-  <% @target.each do |target_name|%>
+  <% @targets.each do |target_name|%>
     <div class="content">
       <div class="content-name">
-        <a href="#"><%= target_name.title%></a>
+        <%= link_to target_name.title, target_comments_path(target_name.id) %>
       </div>
     </div>
   <% end%>

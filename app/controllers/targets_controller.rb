@@ -2,7 +2,8 @@ class TargetsController < ApplicationController
   before_action :move_to_index, except: :index
 
   def index
-    @target = Target.all.order('created_at DESC')
+    @targets = Target.all.order('created_at DESC')
+    
   end
 
   def new

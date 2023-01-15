@@ -9,4 +9,5 @@ class Target < ApplicationRecord
   belongs_to :exise
 
   belongs_to :user
+  has_many :comments
 end
