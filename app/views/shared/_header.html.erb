@@ -1,25 +1,15 @@
 <header>
-  <div class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <div class="container px-5">
+  <div class="navbar navbar-dark bg-secondary static-top">
+    <div class="container">
       <a class="navbar-brand fw-bold" href="#">enjex_app</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-          <% if user_signed_in? %>
-            <li class="nav-item">
-              <%= link_to current_user.nickname, "#", class: "nav-link me-lg-3" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "nav-link me-lg-3" %>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to 'ログイン', new_user_session_path, class: "nav-link me-lg-3" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to '新規登録', new_user_registration_path, class: "nav-link me-lg-3" %>
-            </li>
-          <% end%>
-        </ul>
+      <div>
+        <% if user_signed_in? %>
+          <%= link_to current_user.nickname, "#", class: "btn btn-light" %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "btn-light" %>
+        <% else %>
+          <%= link_to 'ログイン', new_user_session_path, class: "btn btn-light" %>
+          <%= link_to '新規登録', new_user_registration_path, class: "btn btn-light" %>
+        <% end%>
       </div>
     <div>
   </div>
