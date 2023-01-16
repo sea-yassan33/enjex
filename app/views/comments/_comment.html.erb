@@ -4,7 +4,12 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @target.youtube.last(11) %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="card-body flex">
       <h5 class="card-title"><%= @target.title %></h5>
-      <a href="#" class="btn btn-primary">Fight!!</a>
+      <button type="button" class="btn btn-primary position-relative">
+        <%= link_to 'Good Luck!', target_likes_path(target_id: @target.id), method: :post, class: 'text-white' %>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          <%=@likes.count%>
+        </span>
+      </button>
     </div>
     <% @comments.each do |comment|%>
       <div class="message">

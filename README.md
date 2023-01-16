@@ -22,7 +22,7 @@ youtube等にアップロードされているエクササイズ動画を投稿�
 # 実装予定の機能
 
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/bd15095ca418a547f3d78f00a2cc86db.png)](https://gyazo.com/bd15095ca418a547f3d78f00a2cc86db)
+[![Image from Gyazo](https://i.gyazo.com/df3ad40bfa6d9409b362c9338f0e6568.png)](https://gyazo.com/df3ad40bfa6d9409b362c9338f0e6568)
 
 # 画面遷移
 [![Image from Gyazo](https://i.gyazo.com/210a72ed89d3ea13d422f56b1f34b6c1.png)](https://gyazo.com/210a72ed89d3ea13d422f56b1f34b6c1)

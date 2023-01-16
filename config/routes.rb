@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   resources :tops, only: [:index]
   resources :targets, only: [:index, :new, :create ] do
     resources :comments, only: [:index, :create]
+    resources :likes, only:[:create, :destroy]
+    collection do
+      get :likes
+    end
   end
 
 end
