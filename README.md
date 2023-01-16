@@ -12,6 +12,7 @@ youtube等にアップロードされているエクササイズ動画を投稿�
 
 # 利用方法
 ## Top画面
+
 [![Image from Gyazo](https://i.gyazo.com/6e8a0b03ff189361be28756833df9433.gif)](https://gyazo.com/6e8a0b03ff189361be28756833df9433)
 
 ## 動画コンテンツ共有画面
